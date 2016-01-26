@@ -1,3 +1,17 @@
+# Fork of ng-walkthrough
+
+This a fork of [ng-walkthrough by [souly1] (https://github.com/souly1/ng-walkthrough)
+
+Changes made
+- removed the need to use html id attributr in the element when using focus-element-id. Uses javascripts Document.querySelector() to 
+return and focus on the element. 
+
+
+
+Original documentation from the original project when the fork was make below.
+Please note that changes made to this fork can brake features mentioned on the original documentation.
+
+
 [![Build Status](https://travis-ci.org/souly1/ng-walkthrough.svg?branch=master)](https://travis-ci.org/souly1/ng-walkthrough)
 
 # ng-walkthrough
