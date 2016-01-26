@@ -1,11 +1,11 @@
 {
   "name": "ng-walkthrough",
   "version": "0.4.1.1",
-  "homepage": "https://github.com/aoahonen/ng-walkthrough",
+  "homepage": "https://github.com/souly1/ng-walkthrough",
   "authors": [
     "Ophir Stern <souly01@gmail.com>"
   ],
-  "description": "Edited fork of souly01's ng-walkthrough. One of the most common design challenges emerging in mobile design is that of 'invitation' - creating an explanation walk through during user first interaction with the app so to engage the customer. Following Theresa Neil's design pattern from Mobile Design Pattern Gallery",
+  "description": "One of the most common design challenges emerging in mobile design is that of 'invitation' - creating an explanation walk through during user first interaction with the app so to engage the customer. Following Theresa Neil's design pattern from Mobile Design Pattern Gallery",
   "dependencies": {},
   "devDependencies": {
     "karma": "~0.12.0",
@@ -32,10 +32,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aoahonen/ng-walkthrough.git"
+    "url": "git+https://github.com/souly1/ng-walkthrough.git"
   },
   "bugs": {
-    "url": "https://github.com/aoahonen/ng-walkthrough/issues"
+    "url": "https://github.com/souly1/ng-walkthrough/issues"
   },
   "main": "karma.conf.js",
   "directories": {
