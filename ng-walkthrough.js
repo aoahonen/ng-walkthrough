@@ -376,7 +376,7 @@ angular.module('ng-walkthrough', [])
 
                 //Attempts to highlight the given element ID and set Icon to it if exists, if not use default - right under text
                 var setElementLocations = function(walkthroughIconWanted, focusElementId, iconPaddingLeft, iconPaddingTop){
-                    var focusElement = document.querySelector('#' + focusElementId);
+                    var focusElement = document.querySelector(focusElementId);
                     var angularElement = angular.element(focusElement);
                     if (angularElement.length > 0) {
 
