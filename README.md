@@ -3,7 +3,7 @@
 This a fork of [ng-walkthrough by souly1] (https://github.com/souly1/ng-walkthrough)
 
 Changes made
-- Changed caption to use <p> instead of <pre> as the original ng-walkthrough does
+- Changed caption to use `<p>` instead of `<pre>` as the original ng-walkthrough does.
 - removed html related to tip walkthrough feature. **Please do not try to use tip walkthrough (example 3)** 
 - changes to css colors and boarders/box-shadow on focus and glow
 
