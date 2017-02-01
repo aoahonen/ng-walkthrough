@@ -102,7 +102,7 @@ and use one of the two configurations:
 <walkthrough
             is-round=true
             walkthrough-type="transparency"
-            focus-element-id="focusItem"
+            focus-element-selector="#focusItem"
             icon="single_tap"
             main-caption="This is some text"
             is-active="isActive"
@@ -136,22 +136,26 @@ and use one of the two configurations:
 
 ## Directive Attributes
 
+- `wid` (optional) - The id to set to the walkthrough when open
 - `is-active` (mandatory) - Any walkthrough type. Bound element controls display the directive. Set 'true' to bound element in order to display.
 - `walkthrough-type` (mandatory) - Any walkthrough type. Specifies what type of walkthrough to display. Currently supported are 'transparency' and 'tip' types
-- `focus-element-id` (optional) - Any walkthrough type. ID of DOM element we want to give focus to, without it all screen will be grayed out
+- `focus-element-selector` (optional) - Any walkthrough type. CSS selector of DOM element we want to give focus to, if value set to empty string "" all screen will be grayed out. Throws warning if multiple elements return as results and displays first as selected
 - `is-round` (optional) - Any walkthrough type. Set to 'true' if you want the focused area to be round, otherwise it will be square set to the size of the DOM element
+- `has-backdrop` (optional - Any walkthrough type. Set to 'true' if you want the walkthrough to have a darkened backdrop. default is true for 'transparency' type and false for 'tip' type
 - `has-glow` (optional) - Any walkthrough type. Set to 'true' if you want the focused area to have a glow around it
 - `icon` (optional) - Any walkthrough type. If set to any of the predefined values ("single_tap", "double_tap", "swipe_down", "swipe_left", "swipe_right", "swipe_up"), in such case the icon will be bound to focus element (if exists), make sure to add 'ng-walkthrough.tap_icons.js' following instructions above. any other icon can be used and will be loaded from supplied folder
 - `main-caption` (optional) - Any walkthrough type. This is the text that will be displayed in the walk-through. Text can be formatted
 - `use-button` (optional) - Any walkthrough type. set to 'true' you want a button displayed that most be clicked in order to close walkthrough, otherwise clicking anywhere while walkthrough displayed will close it
+- `button-caption` (optional) - Customize the text of the dismiss button if present, default is "Got it!".
+- `walkthrough-hero-image` (optional) - Any walkthrough type. Image to display in walkthrough rigth below caption text
 - `icon-padding-left` (optional) - Any walkthrough type. Add padding to the icon from the left in percentage
 - `icon-padding-top` (optional) - Any walkthrough type. Add padding to the icon from the top in pixels
 - `tip-icon-location` (optional) - For tip walkthrough. In case there is an overlap between the tip text box and the tip icon you can define here which is on top. Either "FRONT" or "BACK"
 - `force-caption-location` (optional) - Any walkthrough type. Set caption location at the top of screen or closer to bottom. Acceptable values: "TOP" or "BOTTOM"
 - `tip-color` (optional) - For tip walkthrough. Define the tip textbox background color. Currently supports "BLACK" or "WHITE" values
-- `is-bind-click-event-to-body` (optional) - Any walkthrough type. If 'use-botton' is not set to true, then any this will bind the click events to the body to capture events outside walkthrough, for example: ionic header
 - `on-walkthrough-show` (optional) - Any walkthrough type. Bind method to be called when walkthrough is displayed
 - `on-walkthrough-hide` (optional) - Any walkthrough type. Bind method to be called when walkthrough is hidden
+- `on-walkthrough-content-clicked` (optional) - Any walkthrough type. Bind method to be called when walkthrough context or hero image clicked
 
 ## Testing
 
