@@ -2,18 +2,25 @@
 
 This a fork of [ng-walkthrough by souly1] (https://github.com/souly1/ng-walkthrough)
 
+Code updated to match v1.0.4 of [ng-walkthrough by souly1 v1.0.4] (https://github.com/souly1/ng-walkthrough/releases/tag/v1.0.4)
+**Please note that there are changes made to ng-walkthrough.js and ng-walkthrough.css** 
+
 Changes made
-- removed the need to use html id attribute in the element when using focus-element-id. 
-( Uses javascripts Document.querySelector() to return and focus on the element. )
+- Changed caption to use `<p>` instead of `<pre>` as the original ng-walkthrough does.
+- removed html related to walkthrough tip feature from ng-walkthrough.js **Please do not try to use tip walkthrough (example 3)** 
+- removed html related to icon feature from ng-walkthrough.js **Please do not try to use icons in walkthrough (example 1)**
+- removed html related to image feature from ng-walkthrough.js **Please do not try to use imeges in walkthrough ( usage example 2)**
+- changes to css colors and boarders/box-shadow on focus and glow on ng-walkthrough.css
 
- 
-
-Original documentation from the original project when the fork was make below.
-Please note that changes made to this fork can brake features mentioned on the original documentation.
-
+[ng-walkthrough by souly1 release:v0.4.3] (https://github.com/souly1/ng-walkthrough/releases/tag/v0.4.3) started accepting all css selectors so old customization was no longer needed.
+~~- removed the need to use html id attribute in the element when using focus-element-id. ~~
+~~( Uses javascripts Document.querySelector() to return and focus on the element. )~~
 
 
+Original documentation from the original project below.
+**Please note that changes made to this fork can brake features mentioned on the original documentation.**
 
+******
 
 # ng-walkthrough
 
